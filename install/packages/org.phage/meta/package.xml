@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>Phage.exe</DisplayName>
+    <Description>Phage.exe, Bacteriophage.</Description>
+    <Version>1.1</Version>
+    <ReleaseDate>2020-04-17</ReleaseDate>
+    <Default>true</Default>
+    <Script>installscript.qs</Script>
+</Package>

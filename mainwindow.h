@@ -3,6 +3,8 @@
 #include <QMainWindow>
 #include <QFile>
 #include <QFileInfoList>
+#include "transform.h"
+#include <QLabel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -22,13 +24,16 @@ private slots:
     void on_pushButton_5_clicked();
     void on_pushButton_4_clicked();
     void on_pushButton_6_clicked();
+    void trans_msg(const int &per, const int remain);
+    void recover_msg(const int &per, const int remain);
 
 private:
+    transform tarns_thread;
     void scan_dir(QString path, QFileInfoList *list, QStringList *nameFilters = NULL);
-    void transform_dir(QString src_dir, QString dst_dir, QFileInfoList *list);
     void recover_dir(QString path, QStringList nameFilters, QFileInfoList *list);
     Ui::MainWindow *ui;
     QFile src_file;
     QByteArray src_data;
+    QLabel status_label;
 };
 #endif // MAINWINDOW_H

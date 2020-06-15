@@ -17,10 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    transform.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    transform.h
 
 FORMS += \
     mainwindow.ui
@@ -29,3 +31,7 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES +=
+
+RC_ICONS = fav.ico

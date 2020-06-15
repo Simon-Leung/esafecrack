@@ -1,0 +1,1 @@
+binarycreator.exe -c config/config.xml -p packages phage_install.exe -v
